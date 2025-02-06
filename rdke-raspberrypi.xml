@@ -5,6 +5,7 @@
     <remote fetch="https://github.com/rdkcentral" name="rdkcentral" review="https://github.com/rdkcentral"/>
     <remote fetch="https://code.rdkcentral.com/r/a/" name="cmf" review="https://code.rdkcentral.com/r/a/"/>
     <remote fetch="https://git.yoctoproject.org" name="oe" review="https://git.yoctoproject.org"/>
+    <remote fetch="https://github.com/AkshayKumar2794/" name="akshay_rdkcentral" review="https://github.com/AkshayKumar2794/"/>
 
     <project groups="buildscripts" name="build-scripts" path="scripts" remote="rdke" revision="refs/tags/4.1.1">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_SCRIPTS"/>
@@ -37,13 +38,13 @@
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIG_COMMON"/>
     </project>
     <!-- Vendor layers -->
-    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-oss-vendor" remote="rdkcentral" revision="refs/tags/4.0.2-RC1">
+    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-oss-vendor" remote="akshay_rdkcentral" revision="e9f03ea62f8c5d9f268169255f6bfe8a34ebe936">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
     </project>
     <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="refs/tags/4.0.5-RC1">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER"/>
     </project>
-    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="refs/tags/4.0.5-RC1">
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="7a6a40866e24285e0d153a1aff56b23c67c21fa4">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
     </project>
