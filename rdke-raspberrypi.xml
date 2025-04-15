@@ -4,6 +4,7 @@
     <remote fetch="https://github.com/rdkcentral" name="rdkcentral" review="https://github.com/rdkcentral"/>
     <remote fetch="https://code.rdkcentral.com/r/a/" name="cmf" review="https://code.rdkcentral.com/r/a/"/>
     <remote fetch="https://git.yoctoproject.org" name="oe" review="https://git.yoctoproject.org"/>
+    <remote fetch="https://github.com/AkshayKumar2794/" name="akshay_rdkcentral" review="https://github.com/AkshayKumar2794/"/>
 
     <project groups="buildscripts" name="build-scripts" path="scripts" remote="rdkcentral" revision="refs/tags/1.0.1">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_SCRIPTS"/>
@@ -45,7 +46,7 @@
     <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="refs/tags/4.0.9">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER"/>
     </project>
-    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="refs/tags/4.4.2">
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="akshay_rdkcentral" revision="ff00049fbe33239fd8729d4620f4f35c0b6417e8">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
     </project>
